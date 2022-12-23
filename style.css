@@ -243,9 +243,8 @@ main {
 
 .text-chuck {
     font-size: 20px;
-    margin: 15px 0 15px 0 ;
+    margin: 15px ;
     text-align: center;
-    background: #00000079;
 
     
 }
@@ -428,7 +427,7 @@ animation: shake ease 0.8s;
     flex-direction: column;
     align-items: center;
     z-index: 5;
-    margin-top: 200px;   
+    margin-top: 350px;   
 }
 
 @media screen and (max-width: 540px){
@@ -527,7 +526,7 @@ animation: shake ease 0.8s;
     background-size: 100% 100%;
     width: 33%;
     height: 65.5vh;
-    left: 60.5%;
+    left: 40.5%;
     bottom: 3.7%;
     position: absolute;
     z-index: 2
@@ -542,7 +541,9 @@ animation: shake ease 0.8s;
 }    
 
 .text-after{
-    margin: 0 15px 0 15px;
+    margin: 15px;
+    box-shadow: 0px 0px 19px 19px rgb(34 60 80 / 69%);
+    background: #000000a1;
 }
 
 .text-title-main-container {
@@ -551,7 +552,7 @@ animation: shake ease 0.8s;
 
 .text-chuck-1 {
     font-size: 20px;
-    margin: 15px 15px 15px 15px;
+    margin: 15px;
     text-align: center;
     
 }
@@ -561,7 +562,40 @@ animation: shake ease 0.8s;
         font-size: 15px;
         margin: 15px 0 15px 0;
         text-align: center;
-        
     }
 }    
 
+.background-house {
+    background: url(./assets/3.png);
+    background-size: 100% 100%;
+    width: 24%;
+    height: 50.3vh;
+    right: 2.5%;
+    bottom: 8%;
+    position: absolute;
+    z-index: 2
+}
+
+@media screen and (max-width: 540px){
+    .background-house {
+        display: none;
+    }
+}    
+
+
+.background-branch {
+    background: url(./assets/1.png);
+    background-size: 100% 100%;
+    width: 17%;
+    height: 30.3vh;
+    right: -3.1%;
+    top: 4.5%;
+    position: absolute;
+    z-index: 2
+}
+
+@media screen and (max-width: 540px){
+    .background-branch {
+        display: none;
+    }
+}    
