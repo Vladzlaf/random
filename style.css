@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+body {
+    background: #2d4760;
+    /* background: url(./assets/6.png); */
+    color: #a4a8d4;
+    /* animation: gradient 10s ease infinite; */
+    background-size: 100%;
+    font-family: 'Staatliches', cursive;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a {
+    color: rgba(248, 248, 248, 0.719);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(226, 125, 31);
+}
+
+.content {
+    width: 80%;
+    z-index: 5;
+
+}
+
+/* .header-container {
+    max-height: 90px;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+} */
+
+.text {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+
+main {
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+.back {
+}
+
+.chuck {
+    display: block;
+    max-height: 400px;
+    max-width: 100%;
+}
+
+/* .button-type {
+    min-height: 50px;
+    background-color: rgb(190, 142, 235);
+    font-family: 'Staatliches', cursive;
+    font-size: 2em;
+    border-radius: 12px;
+    border: 0;
+    margin-top: 10px;
+    color:#ca5961;
+    transition: 0.5s;
+}
+
+.button-type:hover {
+    color: white;
+} */
+
+.bubbly-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #4b667e;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(80, 141, 231, 0.5);
+    font-size: 23px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+@media screen and (max-width: 501px){
+    .bubbly-button {
+        padding: 5% 7%;
+
+    }
+}
+
+.bubbly-button:focus {
+    outline: 0;
+}
+
+.bubbly-button:before,
+.bubbly-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+
+.bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #1037e6 20%, transparent 20%), radial-gradient(circle, transparent 20%, #1037e6 20%, transparent 30%), radial-gradient(circle, #1037e6 20%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%), radial-gradient(circle, transparent 10%, #e79f31 15%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #1037e6 20%, transparent 20%), radial-gradient(circle, #1037e6 20%, transparent 20%), radial-gradient(circle, transparent 10%, #1037e6 15%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%), radial-gradient(circle, #e79f31 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #1037e6;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+.bubbly-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.bubbly-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+.bubbly-button:hover {
+    color: rgba(255, 255, 255, 0.623);
+}
+
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.logo-footer {
+    height: 60px;
+    width: 140px;
+    padding-right: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.info-item {
+    padding-left: 25px;
+}
+
+.info-item:first-child {
+    padding: 0;
+    margin-left: 40px;
+}
+
+.text-chuck {
+    font-size: 25px;
+    margin: 50px 0 50px 0 ;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 501px){
+    .text-chuck {
+        font-size: 15px;
+    }
+}
+
+
+.explosion {
+    animation: change ease 0.8s;
+    background-image: url(./assets/png/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0;
+    background-position: 50%;
+
+}
+
+@keyframes change {
+    0% {
+        background-size: 1vh;
+    }
+    50% {
+        background-size: 50vh;
+    }
+    100% {
+        background-size: 0vh;
+    }
+}
+
+.shadow {
+    animation: shadow 1s ease-in;
+}
+
+@keyframes shadow {
+    0% {
+        text-shadow: 0 0 0 #000303;
+    }
+    50% {
+        text-shadow:0 50px 60px transparent;
+    }
+    100% {
+        text-shadow:0 0 0 transparent;
+    }
+}
+
+.hero {
+animation: shake ease 0.8s;
+}
+
+@keyframes shake {
+    2% {
+    transform: translate(10px, -5px) rotate(-0.5deg); }
+    4% {
+    transform: translate(4px, 1px) rotate(0.5deg); }
+    16% {
+    transform: translate(8px, 7px) rotate(3.5deg); }
+    18% {
+    transform: translate(-8px, -3px) rotate(0.5deg); }
+    20% {
+    transform: translate(2px, -7px) rotate(-2.5deg); }
+    22% {
+    transform: translate(6px, 1px) rotate(-1.5deg); }
+    24% {
+    transform: translate(-1px, -3px) rotate(-1.5deg); }
+    36% {
+    transform: translate(-5px, 8px) rotate(1.5deg); }
+    38% {
+    transform: translate(8px, 5px) rotate(3.5deg); }
+    40% {
+    transform: translate(10px, 2px) rotate(-1.5deg); }
+    42% {
+    transform: translate(0px, -1px) rotate(-2.5deg); }
+    44% {
+    transform: translate(-3px, -6px) rotate(0.5deg); }
+    46% {
+    transform: translate(0px, -6px) rotate(-2.5deg); }
+    48% {
+    transform: translate(6px, 6px) rotate(-2.5deg); }
+    50% {
+    transform: translate(-3px, 9px) rotate(-0.5deg); }
+    64% {
+    transform: translate(8px, -2px) rotate(3.5deg); }
+    66% {
+    transform: translate(8px, -3px) rotate(1.5deg); }
+    68% {
+    transform: translate(4px, 5px) rotate(2.5deg); }
+    86% {
+    transform: translate(3px, 5px) rotate(-0.5deg); }
+    88% {
+    transform: translate(6px, -4px) rotate(3.5deg); }
+    90% {
+    transform: translate(-8px, 3px) rotate(-0.5deg); }
+    92% {
+    transform: translate(-5px, 3px) rotate(-2.5deg); }
+    94% {
+    transform: translate(10px, 2px) rotate(1.5deg); }
+    96% {
+    transform: translate(-8px, 6px) rotate(-2.5deg); }
+    98% {
+    transform: translate(10px, 9px) rotate(1.5deg); }
+    0%, 100% {
+    transform: translate(0, 0) rotate(0); } 
+}
+
+.text-title-main {
+    font-size: 150%;
+    text-align: center;
+}
+
+.button-hidden {
+    display: none;
+}
+
+.background-home {
+    background: url(./assets/6.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.background-snow {
+    background: url(./assets/9.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 23vh;
+
+}
+
+.after-click-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+.background-effect-smoke {
+    background: url(./assets/2.png);
+    background-size: 100% 100%;
+    width: 93.5%;
+    height: 89.5vh;
+    display: flex;
+    bottom: 14%;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 0;
+    left: 9%;
+}
+
+.background-effect-snow {
+    background: url(./assets/7.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 99.5vh;
+    bottom: 3%;
+    position: absolute;
+    z-index: 0;
+}
+
+.background-tree {
+    background: url(./assets/4.png);
+    background-size: 100% 100%;
+    width: 35%;
+    height: 71.5vh;
+    left: 2%;
+    bottom: 3%;
+    position: absolute;
+    z-index: 2
+}
+
+.background-bag {
+    background: url(./assets/5.png);
+    background-size: 100% 100%;
+    width: 15%;
+    height: 33.5vh;
+    left: 29.5%;
+    bottom: 3.7%;
+    position: absolute;
+    z-index: 2
+}
+
+.background-elf {
+    background: url(./assets/8.1.png);
+    background-size: 100% 100%;
+    width: 33%;
+    height: 65.5vh;
+    left: 40.5%;
+    bottom: 3.7%;
+    position: absolute;
+    z-index: 2
+}
+
+.background-house {
+    background: url(./assets/3.png);
+    background-size: 100% 100%;
+    width: 24%;
+    height: 50.3vh;
+    right: 2.5%;
+    bottom: 8%;
+    position: absolute;
+    z-index: 2
+}
+
+.background-branch {
+    background: url(./assets/1.png);
+    background-size: 100% 100%;
+    width: 17%;
+    height: 30.3vh;
+    right: -3.1%;
+    top: 4.5%;
+    position: absolute;
+    z-index: 2
+}
