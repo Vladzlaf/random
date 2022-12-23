@@ -1,4 +1,4 @@
-const text = document.querySelector ('.text-chuck')
+const text = document.querySelector ('.text-chuck-1')
 const button = document.querySelector ('.bubbly-button')
 const mainContainer = document.querySelector('.after-click-content')
 const hiddenBlock  = document.querySelector('.content')
