@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 html, body {
     height: 100%;
@@ -10,10 +10,10 @@ html, body {
 body {
     background: #2d4760;
     /* background: url(./assets/6.png); */
-    color: #a4a8d4;
+    color: #ffffff;
     /* animation: gradient 10s ease infinite; */
     background-size: 100%;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Montserrat';
 }
 
 @keyframes gradient {
@@ -250,6 +250,7 @@ main {
 @media screen and (max-width: 501px){
     .text-chuck {
         font-size: 15px;
+        margin: 20px 0 20px 0;
     }
 }
 
@@ -372,6 +373,14 @@ animation: shake ease 0.8s;
     z-index: 1;
 }
 
+@media screen and (max-width: 540px){
+    .background-home {
+        background-size: 50% 100%;
+        width: 500%;
+    }
+}    
+
+
 .background-snow {
     background: url(./assets/9.png);
     background-size: 100% 100%;
@@ -379,6 +388,14 @@ animation: shake ease 0.8s;
     height: 23vh;
 
 }
+
+@media screen and (max-width: 540px){
+    .background-snow {
+        background-size: 50% 100%;
+        width: 500%;
+    }
+}    
+
 
 .after-click-content {
     display: flex;
@@ -400,6 +417,15 @@ animation: shake ease 0.8s;
     left: 9%;
 }
 
+@media screen and (max-width: 540px){
+    .background-effect-smoke {
+        width: 303.5%;
+        height: 100.5vh;
+        left: -5%;
+    }
+}    
+
+
 .background-effect-snow {
     background: url(./assets/7.png);
     background-size: 100% 100%;
@@ -409,6 +435,14 @@ animation: shake ease 0.8s;
     position: absolute;
     z-index: 0;
 }
+@media screen and (max-width: 540px){
+    .background-effect-snow {
+        width: 294%;
+        height: 86.5vh;
+        top: -10%;
+    }
+}    
+
 
 .background-tree {
     background: url(./assets/4.png);
@@ -421,6 +455,17 @@ animation: shake ease 0.8s;
     z-index: 2
 }
 
+@media screen and (max-width: 540px){
+    .background-tree {
+        width: 65%;
+        height: 41.5vh;
+        left: -5%;
+        }
+}    
+
+
+
+
 .background-bag {
     background: url(./assets/5.png);
     background-size: 100% 100%;
@@ -429,8 +474,17 @@ animation: shake ease 0.8s;
     left: 29.5%;
     bottom: 3.7%;
     position: absolute;
-    z-index: 2
+    z-index: 3
 }
+
+@media screen and (max-width: 540px){
+    .background-bag {
+        width: 25%;
+        height: 10.5vh;
+        left: 35.5%;
+        bottom: 5%;
+    }
+}    
 
 .background-elf {
     background: url(./assets/8.1.png);
@@ -443,24 +497,10 @@ animation: shake ease 0.8s;
     z-index: 2
 }
 
-.background-house {
-    background: url(./assets/3.png);
-    background-size: 100% 100%;
-    width: 24%;
-    height: 50.3vh;
-    right: 2.5%;
-    bottom: 8%;
-    position: absolute;
-    z-index: 2
-}
-
-.background-branch {
-    background: url(./assets/1.png);
-    background-size: 100% 100%;
-    width: 17%;
-    height: 30.3vh;
-    right: -3.1%;
-    top: 4.5%;
-    position: absolute;
-    z-index: 2
-}
+@media screen and (max-width: 540px){
+    .background-elf {
+        width: 79%;
+        height: 45.5vh;
+        left: 32.5%;
+    }
+}    
