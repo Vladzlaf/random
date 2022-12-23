@@ -110,26 +110,20 @@ main {
     margin-bottom: 15px;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #4b667e;
+    background-color: #d4aa00;
     color: #fff;
     border-radius: 12px;
     border: none;
     cursor: pointer;
     position: relative;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-    box-shadow: 0 2px 25px rgba(80, 141, 231, 0.5);
+    box-shadow: 0 2px 25px #fdcb0471;
     font-size: 23px;
     text-transform: uppercase;
     transition: 0.3s;
     z-index: 5;
 }
 
-@media screen and (max-width: 501px){
-    .bubbly-button {
-        padding: 5% 7%;
-
-    }
-}
 
 .bubbly-button:focus {
     outline: 0;
@@ -402,7 +396,15 @@ animation: shake ease 0.8s;
     flex-direction: column;
     align-items: center;
     z-index: 5;
+    margin-top: 200px;
 }
+
+@media screen and (max-width: 540px){
+    .after-click-content {
+        margin-top: 60px;
+    }
+}    
+
 
 .background-effect-smoke {
     background: url(./assets/2.png);
@@ -491,7 +493,7 @@ animation: shake ease 0.8s;
     background-size: 100% 100%;
     width: 33%;
     height: 65.5vh;
-    left: 40.5%;
+    left: 60.5%;
     bottom: 3.7%;
     position: absolute;
     z-index: 2
@@ -501,6 +503,6 @@ animation: shake ease 0.8s;
     .background-elf {
         width: 79%;
         height: 45.5vh;
-        left: 32.5%;
+        left: 31%;
     }
 }    
