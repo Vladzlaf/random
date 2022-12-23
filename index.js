@@ -110,6 +110,6 @@ function showData() {
 button.onclick =  function(){
     text.innerHTML = showData()
     button.classList.add('button-hidden')
-    setTimeout(() => mainContainer.innerHTML = contentAfterClick, 2000)
+    setTimeout(() => mainContainer.innerHTML = contentAfterClick, 4000)
 }
  
