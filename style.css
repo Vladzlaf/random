@@ -535,7 +535,7 @@ animation: shake ease 0.8s;
 @media screen and (max-width: 540px){
     .background-elf {
         width: 79%;
-        height: 45.5vh;
+        height: 41vh;
         left: 31%;
     }
 }    
