@@ -72,7 +72,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 7%;
+    padding-top: 1%;
 }
 
 main {
@@ -245,6 +245,8 @@ main {
     font-size: 25px;
     margin: 50px 0 50px 0 ;
     text-align: center;
+    background: #00000079;
+
     
 }
 
@@ -354,15 +356,32 @@ animation: shake ease 0.8s;
 }
 
 .text-title-main {
-    font-size: 150%;
+    font-size: 350%;
     text-align: center;
 }
+
+@media screen and (max-width: 540px){
+    .text-title-main {
+        font-size: 150%;
+        text-align: center;
+    }
+}    
+
 
 .text-subtitle-main{
-    font-size: 95%;
+    font-size: 205%;
     text-align: center;
 
 }
+
+@media screen and (max-width: 540px){
+    .text-subtitle-main{
+        font-size: 95%;
+        text-align: center;
+    
+    }
+}    
+
 
 .button-hidden {
     display: none;
@@ -523,10 +542,17 @@ animation: shake ease 0.8s;
 }    
 
 .text-after{
-    background: #00000063;
     margin: 0 15px 0 15px;
 }
 
 .text-title-main-container {
     margin: 15px 10px 15px 10px;
 }
+
+.text-chuck-1 {
+    font-size: 25px;
+    margin: 50px 0 50px 0;
+    text-align: center;
+    
+}
+
