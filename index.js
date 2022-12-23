@@ -2,7 +2,8 @@ const text = document.querySelector ('.text-chuck-1')
 const button = document.querySelector ('.bubbly-button')
 const mainContainer = document.querySelector('.after-click-content')
 const hiddenBlock  = document.querySelector('.content')
-const contentAfterClick = '<div class="text-after"><p class="text-chuck" >Еще вас ждет огромный ассортимент стильных дверей по выгодным ценам!</p></div><button class="bubbly-button">В каталог</button>'
+const contentAfterClick = '<div class="text-after"><p class="text-chuck" >Еще вас ждет огромный ассортимент стильных дверей по выгодным ценам!</p></div><a href="https://yurkas.by/"><button class="bubbly-button">В каталог</button></a>'
+
 
 
 const phrases = new Array()
