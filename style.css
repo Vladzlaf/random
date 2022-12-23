@@ -242,8 +242,8 @@ main {
 }
 
 .text-chuck {
-    font-size: 25px;
-    margin: 50px 0 50px 0 ;
+    font-size: 20px;
+    margin: 15px 0 15px 0 ;
     text-align: center;
     background: #00000079;
 
@@ -550,9 +550,18 @@ animation: shake ease 0.8s;
 }
 
 .text-chuck-1 {
-    font-size: 25px;
-    margin: 50px 0 50px 0;
+    font-size: 20px;
+    margin: 15px 0 15px 0;
     text-align: center;
     
 }
+
+@media screen and (max-width: 540px){
+    .text-chuck-1 {
+        font-size: 15px;
+        margin: 15px 0 15px 0;
+        text-align: center;
+        
+    }
+}    
 
