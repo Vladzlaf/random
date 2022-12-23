@@ -1,7 +1,9 @@
 const text = document.querySelector ('.text-chuck')
 const button = document.querySelector ('.bubbly-button')
 const mainContainer = document.querySelector('.after-click-content')
-const contentAfterClick = '<h1 class="text-chuck" >А еще вас ждет огромный ассортимент стильных дверей по выгодным ценам!</h1><button class="bubbly-button">В каталог</button>'
+const hiddenBlock  = document.querySelector('.content')
+const contentAfterClick = '<div class="text-after"><p class="text-chuck" >Еще вас ждет огромный ассортимент стильных дверей по выгодным ценам!</p></div><button class="bubbly-button">В каталог</button>'
+
 
 const phrases = new Array()
 phrases[0] = 'В нашей жизни, как в палитре художника, есть только один цвет, способный дать смысл жизни и искусству, – цвет любви.<br/>Марк Шагал'
@@ -108,6 +110,7 @@ function showData() {
 }
 
 button.onclick =  function(){
+    hiddenBlock.classList.add('open')
     text.innerHTML = showData()
     button.classList.add('button-hidden')
     setTimeout(() => mainContainer.innerHTML = contentAfterClick, 4000)
